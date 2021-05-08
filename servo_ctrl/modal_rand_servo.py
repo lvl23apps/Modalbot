@@ -1,3 +1,4 @@
+
 #####################################Modal Bot V2 ###########
 # This is the  random function mode for the servos. This function is for
 # random movement and may be triggered as a function by another script.
@@ -29,43 +30,43 @@ def head():
      time.sleep(3)
      kit.servo[3].angle = 70
  else:
-     kit.servo[3].angle = 160
+     kit.servo[3].angle = 60
      time.sleep(9)
-     kit.servo[3].angle = 140
+     kit.servo[3].angle = 35
      time.sleep(10)
 
 def wing():
  print("wing")
  switch = randint(1,4)
  if switch == 1:
-     kit.servo[3].angle = 120
+     kit.servo[4].angle = 130
      time.sleep(1)
-     kit.servo[3].angle = 70
+     kit.servo[4].angle = 70
  elif switch == 2:
-     kit.servo[3].angle = 80
+     kit.servo[4].angle = 90
      time.sleep(3)
-     kit.servo[3].angle = 70
+     kit.servo[4].angle = 70
  else:
-     kit.servo[3].angle = 90
-     time.sleep(9)
-     kit.servo[3].angle = 70
+     kit.servo[4].angle = 110
+     time.sleep(1)
+     kit.servo[4].angle = 70
      time.sleep(10)
 
 def greeble():
  print("greeble")
  switch = randint(1,4)
  if switch == 1:
-     kit.servo[3].angle = 120
+     kit.servo[2].angle = 120
      time.sleep(1)
-     kit.servo[3].angle = 70
+     kit.servo[2].angle = 70
  elif switch == 2:
-     kit.servo[3].angle = 80
+     kit.servo[2].angle = 80
      time.sleep(3)
-     kit.servo[3].angle = 70
+     kit.servo[2].angle = 70
  else:
-     kit.servo[3].angle = 90
+     kit.servo[2].angle = 90
      time.sleep(9)
-     kit.servo[3].angle = 70
+     kit.servo[2].angle = 70
      time.sleep(10)
 
 while(1):
@@ -82,3 +83,4 @@ while(1):
     else:
         print("nap time!!")
         time.sleep(20)
+
